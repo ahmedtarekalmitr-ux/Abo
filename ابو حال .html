@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ابو حال للدواجن والمجمدات</title>
-<meta name="description" content="ابو حال للدواجن والمجمدات - أفضل جودة وأسعار يومياً في المطرية دقهلية">
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -22,24 +21,26 @@ background:#ffffff;
 text-align:center;
 }
 
+/* اللوجو */
 .logo-section{
-padding:50px 20px;
+padding:60px 20px;
 background:#fff;
 }
 
 .logo-section img{
-width:300px;
-max-width:95%;
+width:380px;
+max-width:100%;
 }
 
+/* الجزء الأحمر */
 .hero{
 background:#e30613;
 color:white;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .hero h1{
-font-size:34px;
+font-size:36px;
 font-weight:900;
 margin-bottom:20px;
 }
@@ -50,23 +51,24 @@ line-height:1.6;
 font-weight:700;
 }
 
+/* أيقونات التواصل */
 .social-icons{
 margin-top:40px;
 display:flex;
 justify-content:center;
-gap:18px;
+gap:20px;
 flex-wrap:wrap;
 }
 
 .social-icons a{
-width:70px;
-height:70px;
+width:75px;
+height:75px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 color:white;
-font-size:30px;
+font-size:32px;
 text-decoration:none;
 transition:0.3s ease;
 box-shadow:0 4px 12px rgba(0,0,0,0.3);
@@ -74,14 +76,31 @@ box-shadow:0 4px 12px rgba(0,0,0,0.3);
 
 .social-icons a:hover{
 transform:scale(1.15);
-box-shadow:0 6px 18px rgba(0,0,0,0.5);
 }
 
 .tiktok{background:#000;}
 .instagram{background:#d62976;}
 .facebook{background:#1877f2;}
 .whatsapp{background:#25d366;}
-.phone{background:#0d47a1;}
+
+/* زر واتساب العائم */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25d366;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+z-index:1000;
+text-decoration:none;
+}
 
 .contact{
 background:#e30613;
@@ -101,7 +120,7 @@ font-size:14px;
 
 @media(max-width:600px){
 .logo-section img{
-width:230px;
+width:280px;
 }
 .hero h1{
 font-size:28px;
@@ -128,26 +147,26 @@ font-size:18px;
 
 <div class="social-icons">
 
-<a class="whatsapp" 
-href="https://wa.me/qr/6UB7WU7BA6BTD1" 
-target="_blank">
+<!-- واتساب 1 -->
+<a class="whatsapp" href="https://wa.me/qr/6UB7WU7BA6BTD1" target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
 
-<a class="facebook" href="https://www.facebook.com/profile.php?id=61587387830051&mibextid=ZbWKwL" target="_blank">
+<!-- واتساب 2 -->
+<a class="whatsapp" href="https://wa.me/qr/WPRCTDYED5TLA1" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a class="facebook" href="https://www.facebook.com/profile.php?id=61587387830051" target="_blank">
 <i class="fab fa-facebook-f"></i>
 </a>
 
-<a class="instagram" href="https://www.instagram.com/moame.n101?igsh=dWlyZ2w0ZHl0ODJo" target="_blank">
+<a class="instagram" href="https://www.instagram.com/moame.n101" target="_blank">
 <i class="fab fa-instagram"></i>
 </a>
 
-<a class="tiktok" href="https://www.tiktok.com/@user5077831012976?_r=1&_t=ZS-9450v4zIAey" target="_blank">
+<a class="tiktok" href="https://www.tiktok.com/@user5077831012976" target="_blank">
 <i class="fab fa-tiktok"></i>
-</a>
-
-<a class="phone" href="tel:01277041683">
-<i class="fas fa-phone"></i>
 </a>
 
 </div>
@@ -162,6 +181,11 @@ target="_blank">
 <div class="footer">
 © جميع الحقوق محفوظة 2026
 </div>
+
+<!-- زر واتساب عائم (باللينك الأول) -->
+<a href="https://wa.me/qr/6UB7WU7BA6BTD1" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
